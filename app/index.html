@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="shortcut icon" href="images/icon.gif">
+	<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<title>Simon Halling - CV</title>
+	<link rel="stylesheet" type="text/css" href="./styles/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="./styles/style.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	.intro p{
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="container">
+			<img class="grayscale" src="images/lol.png"  id="profilePic"/>
+			<div class="col-sm-4  col-sm-offset-3">
+				<h1>Simon Halling</h1>
+				<p>Software Engineer</p>
+				<ul>
+					<li>live / <strong>Gothenburg, Sweden</strong></li>
+					<li>e-mail / <a href="mailto:halling.7@hotmail.com">halling.7@hotmail.com</a></li>
+				</ul>
+				<img  src="images/javascript.png" class="grayscale">
+			</div>
+		</div>		
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">					
+						<ul id="portfolio_items" class="stuff-grid isotope">
+							<li class="item web-design isotope-item">
+								<h1>Color Junction</h1>
+								<div class="stuff-item stuff-img-1">
+									<div class ="stuff-info">
+										<h3>GAME</h3>
+										<p>A project we had in a course at the university. The focus was to make a user-friendly GUI</p>
+										<p>
+											<a class="button small squared colorbox cboxElement" href="demo/portfolio/1.png">View it</a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="item web-design isotope-item">
+								<h1>???</h1>
+								<div class="stuff-item stuff-img-2">
+									<div class ="stuff-info">
+										<h3>Random</h3>
+										<p>test</p>
+										<p>
+											<a class="button small squared colorbox cboxElement" href="demo/portfolio/1.png">View it</a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="item web-design isotope-item">
+								<h1>???</h1>
+								<div class="stuff-item stuff-img-3">
+									<div class ="stuff-info">
+										<h3>Random</h3>
+										<p>test</p>
+										<p>
+											<a class="button small squared colorbox cboxElement" href="demo/portfolio/1.png">View it</a>
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2">
+			<h1>Slide 2</h1>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<div class="row">
+				<div class="col-sm-2  col-sm-offset-4">
+					<h1>Employment</h1>
+					<hr class="long">
+						<em>June 2014 - Aug 2014</em>
+						<h3>Backstage - Gothenburg</h3>
+						<em>Nightclub - Bartender</em>
+					<hr class="short">
+						<em>May 2013 - Aug 2013</em>
+						<h3>Mark & Miljö Väst - Gothenburg</h3>
+						<em>Janitor - Gardener</em>
+					<hr class="short">
+						<em>Nov 2012 - Apr 2013</em>
+						<h3>Strike & CO - Gothenburg</h3>
+						<em>Bowlinghall - Bartender / Portier</em>
+					<hr class="short">
+						<em>Jun 2012 - Aug 2012</em>
+						<h3>Harrys - Kungshamn</h3>
+						<em>Restaurant - Bartender</em>
+					<hr class="short">
+						<em>Dec 2011 - Apr 2012</em>
+						<h3>SkiStar - Sälen</h3>
+						<em>Bowlinghall - Bartender</em>
+					<hr class="short">
+						<em>Sept 2006 - Apr 2013</em>
+						<h3>Got Event - Gothenburg</h3>
+						<em>VIP Lounge - Bartender / Waiter</em>				
+				</div>
+				<div class="col-sm-2  col-sm-offset-0">
+				<h1>Education</h1>
+				<hr class="long">
+					<em>Aug 2013 - Jun 2016</em>
+					<h3>Software Engineer Mobile Platforms</h3>
+					<em>Jönköping University Foundation</em>
+				<hr class = "short">
+					<em>Aug 2006 - Jun 2009</em>
+					<h3>Technology And Architecture</h3>
+					<em>Fässbergsgymnasiet</em>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="./scripts/jquery.fullPage.js"></script>
+
+	<script type="text/javascript" src="../../lib/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="../../lib/jquery.pikachoose.min.js"></script>
+	<script type="text/javascript" src="../../lib/jquery.touchwipe.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['', '', ''],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third and last page']
+			});
+		});
+	</script>
+</body>
+</html>
